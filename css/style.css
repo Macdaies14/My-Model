@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Lato:wght@300&family=Rajdhani:wght@400;700&family=Ubuntu:wght@700&display=swap');
+
+:root {
+    --swiper-navigation-size: 0;
+}
+
+body{
+    color: #FFF;
+}
+
+.wrapper{
+    height: 100vh;
+    background-color: #1F2022;
+    background-image:url('../img/E.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 320px;
+    background-position-y: -50px;
+}
+
+.wrapper header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.wrapper header h1{
+    font-size: 35px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+}
+
+.wrapper header h1 span{
+    color: rgb(218, 38, 38);
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+}
+
+.wrapper header nav{
+    width: 40%;
+}
+
+.wrapper header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wrapper header nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper header nav ul li{
+    position: relative;
+}
+
+.wrapper header nav ul li a::after{
+    content: "";
+    width: 0;
+    border-bottom: 1.5px solid red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s linear ;
+}
+
+.wrapper header nav ul li a:hover::after{
+    width: 140%;
+}
+
+main{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .container {
+    width: 50%;
+    height: 350px;
+    margin-top: 70px;
+}
+
+main .container h4{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+main .container h1{
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+main .container h5{
+    font-size: 12px;
+    font-family: 'Advent Pro', sans-serif;
+    margin-bottom: 5px;
+}
+
+main .container .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+}
+
+main .container .grid-container .grid-content p{
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+main .container .social-buttons{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+main .container .social-buttons span{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 5px;
+    cursor: pointer;
+}
+
+main .container .social-buttons span:nth-child(1){
+    border-color: #fb3958;
+    color: #fb3958;
+}
+
+main .container .social-buttons span:nth-child(2){
+    border-color: #1DB954;
+    color: #1DB954;
+}
+
+main .container .social-buttons span:nth-child(1):hover{
+    color: #FFF;
+    background-color: #fb3958;
+}
+
+main .container .social-buttons span:nth-child(2):hover{
+    color: #FFF;
+    background-color: #1DB954;
+}
+
+
+main .rot-socials{
+      width: 354px;
+      position: relative;
+      top: 389px;
+      right: 50px;
+      height: 50px;
+      transform-origin: right;
+      transform: rotate(90deg);
+}
+
+main .rot-socials ul{
+    display: flex;
+}
+
+main .rot-socials ul li{
+    margin: 0 30px;
+    position: relative;
+}
+
+main .rot-socials ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+}
+
+main .rot-socials ul li a::after{
+    content: "";
+    width: 0;
+    border-bottom: 1.5px solid #4267B2;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s linear ;
+}
+
+
+
+main .rot-socials ul li a:hover::after{
+    width: 120%;
+}
+
+footer .footer-wrapper{
+    width: 100%;
+    height: 150px;
+    background-color: #1F2022;
+    display: flex;
+}
+
+footer .footer-wrapper .footer-left{
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px;
+    gap: 30px;
+}
+
+footer .footer-wrapper .footer-left .footer-content{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footer-wrapper .footer-left .footer-content h2{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+footer .footer-wrapper .footer-left .footer-content h3{
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+  
+}
+
+footer .footer-right{
+    width: 55%;
+    height: 100%;
+    background-color: #223256;
+    display: grid;
+}
+
+footer .footer-right .footer-right-container{
+    width: 70%;
+    height: 180px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+}
+
+footer .footer-right .footer-right-container .img{
+    width: 50%;
+    height: 100%;
+}
+
+footer .footer-right .footer-right-container .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .footer-right .footer-right-container .text{
+    width: 50%;
+}
+
+.text-button{
+    display: flex;
+}
+
+footer .footer-right .footer-right-container .text button{
+    border: 0;
+    background-color: #223256;
+    color: #FFF;
+    cursor: pointer;
+    padding: 15px 18px;
+}
+
+footer .footer-right .footer-right-container .text button:hover{
+    background-color: #1e272c;
+}
+
+footer .footer-right .footer-right-container .text-content{
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+footer .footer-right .footer-right-container .text-content h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+footer .footer-right .footer-right-container .text-content p{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    position: static;
+    height: 0;
+}
+
+.glitch .display{
+    position: relative;
+}
+
+
+
+
